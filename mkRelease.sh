@@ -1,8 +1,19 @@
 #!/bin/bash
 
 
-if [ 1 -eq $# ] ; then
-    NewVersionNumber=$1
+function helpText()
+{
+    echo "Xxx"
+}
+
+
+if [ 2 -eq $# ] ; then
+    newVersionNumber=$1
+    gitRepo=$2
+else
+    helpText
+    exit -1
 fi
 
-echo "New version number: ${NewVersionNumber}"
+echo "New version number: ${newVersionNumber}"
+echo "git repo: ${gitRepo}"
