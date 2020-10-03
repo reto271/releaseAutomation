@@ -1,0 +1,2 @@
+# releaseAutomation
+Makes git releases
